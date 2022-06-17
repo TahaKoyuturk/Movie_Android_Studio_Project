@@ -9,9 +9,14 @@
     tools:context=".Activities.MainActivity"
     android:background="@color/imdbyellow">
 
+    <ImageView
+        android:layout_width="369dp"
+        android:layout_height="228dp"
+        android:src="@drawable/imdb">
+
+    </ImageView>
     <EditText
         android:background="@drawable/buttondesign"
-
         android:id="@+id/movie_input_text"
         android:textColor="@color/white"
         android:layout_width="match_parent"

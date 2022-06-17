@@ -18,7 +18,6 @@ public class MainActivity extends Activity {
     private EditText movie_name;
     private Button show_saved_data_btn;
     private Button show_data_btn;
-
     private String movieName;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +44,7 @@ public class MainActivity extends Activity {
         movieName=getMovieNameFromLocalDataSource();
         Log.e("moviename: ",movieName);
 
-        if(movieName.length()>=0){
+        if(movieName.length()>0){
             navigateMovieListActivity();
         }
     }
