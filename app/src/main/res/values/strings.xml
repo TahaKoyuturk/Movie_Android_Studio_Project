@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Project</string>
+    <string name="show_saved_data">Show Saved Movies</string>
+    <string name="show_data">Show Movies</string>
+    <string name="movie_name">  Enter Movie</string>
+    <string name="save">Save</string>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".Activities.MovieDetailActivity"
+    android:background="@color/imdbyellow">
+
+    <ImageView
+
+        android:id="@+id/poster_textview"
+        android:layout_width="314dp"
+        android:layout_height="304dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+
+        ></ImageView>
+
+    <TextView
+        android:id="@+id/title_textview"
+        android:layout_width="276dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttondesign"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/tolga"></TextView>
+
+    <TextView
+        android:textAlignment="center"
+        android:textColor="@color/tolga"
+        android:textAllCaps="true"
+        android:background="@drawable/buttondesign"
+        android:id="@+id/year_textview"
+        android:layout_width="276dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        >
+    </TextView>
+    <TextView
+        android:textAlignment="center"
+        android:textColor="@color/tolga"
+        android:textAllCaps="true"
+        android:background="@drawable/buttondesign"
+        android:id="@+id/type_textview"
+        android:layout_width="276dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        >
+    </TextView>
+    <androidx.appcompat.widget.AppCompatButton
+        android:text="@string/save"
+        android:textColor="@color/tolga"
+        android:background="@drawable/savebuttondesign"
+        android:layout_marginTop="30dp"
+        android:id="@+id/save_button"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+</LinearLayout>
