@@ -41,12 +41,12 @@ public class MovieResultAdapter  extends RecyclerView.Adapter<MovieResultAdapter
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         result = movieResultList.get(position);
         holder.title_textview.setText(result.getTitle());
-        holder.imdbRating_textview.setText(result.getImdbID());
+        holder.type_textview.setText(result.getType());
         String imageURL=result.getPoster();
         Glide.with(holder.poster_image)
                     .load(imageURL)
                     .fitCenter()
-                    .override(5000,5000)
+                    .override(500,500)
                     .into(holder.poster_image);
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
@@ -67,14 +67,14 @@ public class MovieResultAdapter  extends RecyclerView.Adapter<MovieResultAdapter
 
         private ImageView poster_image;
         private TextView title_textview;
-        private TextView imdbRating_textview;
+        private TextView type_textview;
 
         public ViewHolder(View v) {
             super(v);
 
             title_textview = v.findViewById(R.id.title_textview);
             poster_image = v.findViewById(R.id.image_view);
-            imdbRating_textview=v.findViewById(R.id.imdbRating_textview);
+            type_textview=v.findViewById(R.id.type_textview);
         }
     }
 

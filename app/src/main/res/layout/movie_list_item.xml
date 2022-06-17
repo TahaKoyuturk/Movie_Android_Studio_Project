@@ -2,22 +2,23 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/imdbGrey"
+    android:background="@color/imdbyellow"
     android:orientation="horizontal"
     android:padding="10dp"
     >
 
     <ImageView
+
         android:id="@+id/image_view"
         android:layout_width="10dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:background="#686363">
+        android:background="@color/imdbyellow">
 
     </ImageView>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="204dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:orientation="vertical"
@@ -26,15 +27,19 @@
         <TextView
             android:id="@+id/title_textview"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:textColor="@color/black">
 
         </TextView>
 
         <TextView
-            android:id="@+id/imdbRating_textview"
-            android:layout_width="match_parent"
+            android:id="@+id/type_textview"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"></TextView>
+            android:layout_marginTop="10dp"
+            android:textAllCaps="true"
+            android:textColor="@color/black"></TextView>
 
 
     </LinearLayout>
